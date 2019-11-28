@@ -1,0 +1,47 @@
+{
+  "name": "@climba03003/crypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.0",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "coveralls": "^3.0.8",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "mocha": "^6.2.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^13.0.0",
+    "prettier": "^1.19.1",
+    "should": "^13.2.3",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "preeslint": "npm install -D eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin",
+    "eslint": "eslint --fix --ext .ts lib test",
+    "aprebuild": "npm install",
+    "build": "npx tsc",
+    "pretest": "npm run build",
+    "test": "npx nyc --reporter=html --reporter=text --include=lib/**/*.js --all mocha --recursive",
+    "precoveralls": "npm run build",
+    "coveralls": "npx nyc report --reporter=text-lcov | npx coveralls && rm -rf ./coverage"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/climba03003/Crypto.git"
+  },
+  "author": "KaKa",
+  "license": "GPL-3.0"
+}
