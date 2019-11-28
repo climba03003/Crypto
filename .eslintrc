@@ -64,5 +64,13 @@
 
     // Too Much False Positive
     "require-atomic-updates": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["test/**/*.ts"],
+      "rules": {
+        "no-prototype-builtins": "off"
+      }
+    }
+  ]
 }
