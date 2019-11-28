@@ -55,7 +55,7 @@ describe('AES', function() {
         encrypted.value,
         Buffer.from(encrypted.iv, 'hex'),
         Buffer.from(encrypted.authTag, 'hex'),
-        'aes-256-gcm',
+        undefined,
         encrypted.secret,
         encrypted.salt
       );
