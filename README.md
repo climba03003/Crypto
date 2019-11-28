@@ -1,4 +1,4 @@
-# Validator
+# Crypto
 
 [![Build Status](https://travis-ci.com/climba03003/Crypto.svg?branch=master)](https://travis-ci.com/climba03003/Crypto)
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/climba03003/Crypto)](https://github.com/climba03003/Crypto)
