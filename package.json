@@ -28,7 +28,7 @@
   "scripts": {
     "preeslint": "npm install -D eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin",
     "eslint": "eslint --fix --ext .ts lib test",
-    "aprebuild": "npm install",
+    "prebuild": "npm install",
     "build": "npx tsc",
     "pretest": "npm run build",
     "test": "npx nyc --reporter=html --reporter=text --include=lib/**/*.js --all mocha --recursive",
