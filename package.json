@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/climba03003/crypto.git"
+    "url": "https://github.com/climba03003/crypto"
   },
   "author": "KaKa",
   "license": "GPL-3.0",
